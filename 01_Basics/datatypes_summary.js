@@ -31,3 +31,28 @@ console.log(typeof myObjects);
 const myFunction = function(){
     console.log("Hello My Function");
 }
+
+//+++++++++++++++++++++++++++++++++++++++++++
+
+// Two types of memory - Stack (primitive data types) & Heap (Non-primitive Data types)
+
+let myYoutubeName = "Priyankadubey4610" //stack example
+let anotherName = myYoutubeName
+
+anotherName = "Priyad";  // Stack me hum value ka copy dete hai so if change kr reh toh copy wale changes aayenge but original same rahega
+console.log(myYoutubeName);
+console.log(anotherName);
+
+//Heap example
+
+let userOne ={ 
+    userEmail : "user@google.com",
+    upiId : "Userybl"
+}
+
+let userTwo = userOne;
+userTwo.userEmail = "riya@google.com" // heap memory me value ka reference dete haiii toh if changes krr rehhh toh original pr bhi effect hota hai..
+
+console.log(userOne.userEmail);
+console.log(userTwo.userEmail);
+
