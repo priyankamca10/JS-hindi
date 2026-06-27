@@ -3,7 +3,7 @@ let repoCount = 5;
 
 console.log(`Hello my name is ${userName} and my Repository count is ${repoCount}`)
 
-// To declare strings
+// To declare variables
 
 const gameName = new String('Priyankad')
 
