@@ -1,23 +1,23 @@
 //Dates ..it is an Object
 
 let myDate = new Date();
-// console.log(myDate)
+console.log(myDate)
 
-// console.log(myDate.toString());
+console.log(myDate.toString());
 
-// console.log(myDate.toDateString());
+console.log(myDate.toDateString());
 
-// console.log(myDate.toLocaleString());
+console.log(myDate.toLocaleString());
 
-// console.log(myDate.toLocaleDateString());
+console.log(myDate.toLocaleDateString());
 
-// console.log(myDate.toISOString());
+console.log(myDate.toISOString());
 
-// console.log(myDate.toLocaleTimeString());
+console.log(myDate.toLocaleTimeString());
 
-// console.log(myDate.toJSON());
+console.log(myDate.toJSON());
 
-// console.log(typeof myDate)
+console.log(typeof myDate)
 
 
 let mycreatedDate = new Date(2026, 2 , 24); //YYYY, M(start with 0), date)
@@ -39,3 +39,15 @@ console.log(mycreatedDate2.getTime()); // to get milliseconds
 
 //to convert Milliseconds to seconds
 console.log(Math.floor(Date.now()/1000));
+
+// More Methods about Date
+
+let newDate = new Date();
+console.log(newDate);
+console.log(newDate.getDate());
+console.log(newDate.getMonth()+1);
+console.log(newDate.getDay());
+
+newDate.toLocaleString('default', {
+     weekday : 'long'
+})
