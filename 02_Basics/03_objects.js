@@ -26,8 +26,19 @@ console.log(jsUser["fullName"]);
 
 
 jsUser.email = "priyanka@chatgpt.com" //to change the value of key (overwrite)
-Object.freeze(jsUser); // to lock the value or obejct from getting change
+// Object.freeze(jsUser); // to lock the value or object from getting change
 jsUser.email = "priyanka@yahoo.com";
 console.log(jsUser);
 
+// To add function in an object 
+jsUser.greeting = function(){
+    console.log(" Hello JS user. ");
+    
+}
+jsUser.greetingTwo = function(){
+    console.log(`Hello JS user, ${this.name}`);
+    
+}
+console.log(jsUser.greeting());
+console.log(jsUser.greetingTwo());
 
