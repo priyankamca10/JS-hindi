@@ -4,7 +4,7 @@
 // console.log(Y);
 // console.log(A);
 
-function sayMyName (){
+function sayMyName (){           //normal function
    console.log("P"); 
    console.log("R"); 
    console.log("I");
@@ -14,18 +14,24 @@ function sayMyName (){
 sayMyName()  // to call or execute the function
 
 
-// function addTwoNumber( num1,num2){      //function without return
-//        console.log(num1 + num2);
-//  }
-//  addTwoNumber(2,8);
-// const result = addTwoNumber(5,5) //this will not work because we have not use return in function
-// console.log("Result : ", result); 
+function addTwoNumber( num1,num2){      //function without return
+       console.log(num1 + num2);
+ }
+ addTwoNumber(2,8);
+const result = addTwoNumber(5,5)       //this will not work because we have not use return in function
+console.log("Result : ", result); 
 
 
 function addTwoNumber( num1,num2){             //function with return keyword
       //  let result = num1 + num2
       //  return result
-      return num1 + num2;
+      return num1 + num2;  // from return we can store value in another variable
  }
 const result = addTwoNumber(5,5)
 console.log("Result : ", result);
+
+
+function userLoggedIn(username) {
+   return `${username} has just logged in`
+}
+console.log(userLoggedIn("Priyanka"))
