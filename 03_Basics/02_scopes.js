@@ -36,7 +36,23 @@ if(true){
         console.log(username + website);
         
     }
-    console.log(website);  // this will not work because it is out of block scope
+    //console.log(website);  // this will not work because it is out of block scope
     
 }
-console.log(username); //same too will not work because if scope problem 
+//console.log(username); //same too will not work because if scope problem 
+
+
+//++++++++++++++++Interesting+++++++++++++++
+
+console.log(addOne(3)); //this will work
+
+function addOne(num){
+    return num+1
+}
+
+//console.log(addTwo(5)); // this will not work because we have iniitaialze and then value iof funxtion in variable
+
+const addTwo = function(num){     //function can be written like this also and it is also called expression
+    return num + 2
+}
+addTwo(5)
