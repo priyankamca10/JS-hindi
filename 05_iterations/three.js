@@ -15,3 +15,17 @@ for (const greet of greeting) {
     console.log(`Each char is ${greet}`);
     
 }
+
+//Map - type of object which hold keys and values and also they are unique
+
+const map = new Map()
+map.set("IN" , "India")
+map.set("USA", "United State of America")
+map.set("FR" , "France")
+console.log(map);
+
+//applying for of loop on above map
+for(const [map1,map2] of map){       // here map1 will hold keys and map2 will hold values ..hence we can use any name 
+    console.log(map1, ": - ", map2);
+    
+}
