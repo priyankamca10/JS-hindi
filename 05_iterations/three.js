@@ -29,3 +29,13 @@ for(const [map1,map2] of map){       // here map1 will hold keys and map2 will h
     console.log(map1, ": - ", map2);
     
 }
+
+//for-of loop will not iterate object type of data
+const myObj ={
+    "game1" : "Tic-Tac-Toe",
+    "game2" : "Subway Sufer"
+}
+for (const [key,value] of myObj) {
+     console.log(key, ": - ", value);
+    
+}
