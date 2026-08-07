@@ -26,6 +26,19 @@ myLang.forEach((item,index,arr) => {     //for each does not contain only one pa
 const myCoding =[
     {
         languageName : "Java",
-        
-    }
+        languageFilename : "java"
+    },
+    {
+        languageName : "Javascript",
+        languageFilename : "js"
+    },
+    {
+        languageName : "python",
+        languageFilename : "py"
+    },
 ]
+
+myCoding.forEach( (item) => {
+    console.log(item.languageName);
+
+})
