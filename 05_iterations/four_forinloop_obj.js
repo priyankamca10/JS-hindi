@@ -12,7 +12,7 @@ for (const key in myLang) {
     
 }
 
-//on Array
+//for in  --on Array
 const arr = ["js", "cpp", "ruby", "swift"]
 for (const key in arr) {
     console.log(arr[key]);
