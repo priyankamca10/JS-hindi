@@ -1,12 +1,13 @@
 //for each does not return value if it stores somewhere 
-// const myLang = ["js", "java", "python", "ruby"]
-// const values = myLang.forEach( (item) =>{
-//     console.log(item);
 
-// })
-// console.log(values);
+const myLang = ["js", "java", "python", "ruby"]
+const values = myLang.forEach( (item) =>{
+    console.log(item);
 
-//filter method - it will return 
+})
+console.log(values);
+
+//filter method of array.  - it will return 
 const myNums = [1,2,3,4,5,6,7,8,9,10]
 
 const newNums = myNums.filter( (num) => {
@@ -37,5 +38,14 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
   const userBooks = books.filter( (bk) => bk.genre === "History")
-  console.log(userBooks);
-  
+   console.log(userBooks);
+
+//   const userBooks1 = books.filter( (bk) => bk.publish >= 2000)
+
+ const userBooks1 = books.filter( (bk) =>  
+    {return bk.publish >= 1995 && bk.genre === "History"
+
+    }) 
+
+ console.log(userBooks1);
+ 
