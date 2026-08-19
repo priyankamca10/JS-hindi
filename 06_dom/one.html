@@ -1,15 +1,23 @@
-//Document object model
-<!DOCTYPE html>                      //Tells type of document here it is Html document
+<!-- Document Object Model -->
+
+<!DOCTYPE html>
+<!-- Tells the browser that this is an HTML5 document -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: beige;
+            color: #000;
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black"> 
-        <h1 class= "heading"> DOM learning in JS </h1>
-        <p>Lorem ipsum dolor sit amet.</p>
-    </div>
-
+<body  class="bg-black">
+<div>
+    <h1 id="title" class="heading">DOM Learning on Youtube <span style="display:none"> test text</span> </h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
 </body>
 </html>
