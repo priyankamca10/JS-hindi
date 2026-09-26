@@ -1,9 +1,18 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    text-align: center;
+}
 .container {
   width: 575px;
   height: 825px;
 
   background-color: #d9d97d;
-  padding-left: 30px;
+  /* padding-left: 30px; */
 }
 #height,
 #weight {
@@ -42,5 +51,6 @@ button {
 h1 {
   padding-left: 15px;
   padding-top: 25px;
+  text-align: center;
   
 }
